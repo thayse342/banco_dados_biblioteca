@@ -8,11 +8,11 @@ INSERT INTO Enderecos (id,rua,numero_casa,cep,complemento) VALUES
 (5,'Rua Tenha uma Ultima Semana',22,234567800,'Cem anos Plantando Homens na Terra- Funerária Agricola');
 
 INSERT INTO Editoras (id,nome,cnpj,telefone,email) VALUES
-(6,'Construindo Sonho','956780001524','55418985067')
-(7,'Tudo Pode Ser','06789000118',)
-(8,'Agora Vai','754380001523',)
-(9,'Sempre Soube','432480001456',)
-(10,'Romanticos Nós','432480001456',)
+(6,'Construindo Sonho','956780001524','55418985067','construindosonho@gmail.com'),
+(7,'Tudo Pode Ser','06789000118','55678986068','tudopodeser@hotmail.com'),
+(8,'Agora Vai','754380001523','55456788901','agoravai@gmail.com'),
+(9,'Sempre Soube','432480001456',55345897789,'sempresoube@yahoo.com'),
+(10,'Romanticos Nós','432480001456',55356645789,'romanticosnos@hotmail.com');
 
 
 INSERT INTO Livros (titulo, data_publicacao, qtd_paginas, edicao, isbn, idioma,	disponibilidade, id_autores_fk,	id_generos_fk,	id_editoras_fk)
