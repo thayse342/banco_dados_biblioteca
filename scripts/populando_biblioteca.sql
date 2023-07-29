@@ -21,6 +21,15 @@ INSERT INTO Generos (id,categoria) VALUES
 (14,'Terror'),
 (15,'Policial');
 
+INSERT INTO Pessoas (id,nome,email,cpf,telefone,nasc,id_enderecos_fk) VALUES 
+(16,'Leo Alegre','leo@souemail','444333556','9918090','1987-04-01',1),
+(17,'Luluzinha Almeida','lUlu@lindaemail.com','555999564','9917095', '2000-03-02',2),
+(18,'Runivaldo Alencar','runizinhinho@email.com','777888952','9916099','1999-04-09',3),
+(19,'Jujuba Navida','navida@email.com','789555667','99170568','2022-06-11',4),
+(20,'Jujuba Navida','navida@email.com','789555667','991505698','2022-06-11',5);
+
+
+
 INSERT INTO Livros (titulo, data_publicacao, qtd_paginas, edicao, isbn, idioma,	disponibilidade, id_autores_fk,	id_generos_fk,	id_editoras_fk)
 VALUES 
 ('A volta dos que foram','1990-02-11',300,'Primeira',100,'BR',0,1,1,1),
@@ -30,10 +39,3 @@ VALUES
 ('Rapunzel careca','1990-02-01',200,'Primeira',100,'BR',1,5,1,5);
 
 
-INSERT INTO Pessoas ( nome, email, cpf, telefone, nasc, id_enderecos_fk)
-VALUES 
-('Leo Alegre','leo@souemail','444333556','9918090','1987-04-01',1),
-('Luluzinha Almeida', 'lUlu@lindaemail','555999564','2000-03-02',2),
-('Runivaldo Alencar', 'runizinhinho@email','777888952','1999-04-09',3),
-('Jujuba Navida', 'navida@email','789555667','2022-06-11',4),
-('Jujuba Navida', 'navida@email','789555667','2022-06-11',5)
