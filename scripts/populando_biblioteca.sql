@@ -37,7 +37,14 @@ INSERT INTO Usuarios(id,senha,id_pessoas_fk) VALUES
 (23,'Naoerroursrs',19),
 (24,'Serioquerrou',20);
 
-INSERT INTO 
+INSERT INTO Funcionarios(id,senha,cargo,id_pessoas_fk) VALUES
+(25,'Viverarte','Atendente',16),
+(26,'Felicidade','Bibliotecario',17),
+(27,'Sebo123','Restaurador',18),
+(29,'Dia...','Auxiliar de Limpeza',19),
+(30,'@#isso','Bibliotecario',20);
+
+INSERT INTO Autores()
 
 
 
