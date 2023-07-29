@@ -14,6 +14,12 @@ INSERT INTO Editoras (id,nome,cnpj,telefone,email) VALUES
 (9,'Sempre Soube','432480001456',55345897789,'sempresoube@yahoo.com'),
 (10,'Romanticos Nós','432480001456',55356645789,'romanticosnos@hotmail.com');
 
+INSERT INTO Generos (id,categoria) VALUES
+(11,'Ação'),
+(12,'Suspense'),
+(13,'Comédia'),
+(14,'Terror'),
+(15,'Policial');
 
 INSERT INTO Livros (titulo, data_publicacao, qtd_paginas, edicao, isbn, idioma,	disponibilidade, id_autores_fk,	id_generos_fk,	id_editoras_fk)
 VALUES 
