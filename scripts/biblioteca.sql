@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS Livros (
  CREATE Table IF NOT EXISTS Funcionarios (
   id INT AUTO_INCREMENT PRIMARY KEY,
   senha VARCHAR(12),
-  cargo ENUM('Atendente','Bibliotecario','Restaurador','Auxiliar de Limpeza','Bibliotecario'),
+  cargo ENUM('Atendente','Bibliotecario','Restaurador','Auxiliar de Limpeza','Bibliotecaria'),
   id_pessoas_fk INT 
 );
   CREATE Table IF NOT EXISTS Autores (
