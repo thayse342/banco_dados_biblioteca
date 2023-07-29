@@ -28,6 +28,17 @@ INSERT INTO Pessoas (id,nome,email,cpf,telefone,nasc,id_enderecos_fk) VALUES
 (19,'Jujuba Navida','navida@email.com','789555667','99170568','2022-06-11',4),
 (20,'Jujuba Navida','navida@email.com','789555667','991505698','2022-06-11',5);
 
+INSERT INTO Usuarios(id,senha,id_pessoas_fk) VALUES
+(20,'Adivinha',16);
+
+INSERT INTO Usuarios(id,senha,id_pessoas_fk) VALUES
+(21,'TentaDenovo',17),
+(22,'Faltoualgo',18),
+(23,'Naoerroursrs',19),
+(24,'Serioquerrou',20);
+
+INSERT INTO 
+
 
 
 INSERT INTO Livros (titulo, data_publicacao, qtd_paginas, edicao, isbn, idioma,	disponibilidade, id_autores_fk,	id_generos_fk,	id_editoras_fk)
