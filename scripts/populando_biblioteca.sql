@@ -51,12 +51,14 @@ INSERT INTO Autores(id,qtd_livros,id_pessoas_fk) VALUES
 (34,5,19),
 (35,6,20);
 
-INSERT INTO Livros (titulo, data_publicacao, qtd_paginas, edicao, isbn, idioma,	disponibilidade, id_autores_fk,	id_generos_fk,	id_editoras_fk) VALUES
+INSERT INTO Livros (id,titulo, data_publicacao, qtd_paginas, edicao, isbn, idioma,	disponibilidade, id_autores_fk,	id_generos_fk,	id_editoras_fk) VALUES
  
-('A volta dos que foram','1990-02-11',300,'Primeira',100,'BR',0,31,11,6),
-('As pistoleiras sem dedos','1998-02-11',100,'Segunda',100,'BR',0,32,12,7),
-('Pueira no fundo do mar','2000-03-12',300,'Primeira',100,'BR',0,33,13,8),
-('O dia que foi noite','1990-02-13',300,'Primeira',100,'BR',1,34,14,9),
-('Rapunzel careca','1990-02-01',200,'Primeira',100,'BR',1,35,15,10);
+(36,'A volta dos que foram','1990-02-11',300,'Primeira',100,'BR',0,31,11,6),
+(37,'As pistoleiras sem dedos','1998-02-11',100,'Segunda',100,'BR',0,32,12,7),
+(38,'Pueira no fundo do mar','2000-03-12',300,'Primeira',100,'BR',0,33,13,8),
+(39,'O dia que foi noite','1990-02-13',300,'Primeira',100,'BR',1,34,14,9),
+(40,'Rapunzel careca','1990-02-01',200,'Primeira',100,'BR',1,35,15,10);
+
+INSERT INTO Emprestimos (id,data_devolução,id_livros_fk,id_funcionarios_fk,id_usuarios_fk) VALUE
 
 
