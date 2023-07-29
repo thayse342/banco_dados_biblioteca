@@ -59,6 +59,10 @@ INSERT INTO Livros (id,titulo, data_publicacao, qtd_paginas, edicao, isbn, idiom
 (39,'O dia que foi noite','1990-02-13',300,'Primeira',100,'BR',1,34,14,9),
 (40,'Rapunzel careca','1990-02-01',200,'Primeira',100,'BR',1,35,15,10);
 
-INSERT INTO Emprestimos (id,data_devolução,id_livros_fk,id_funcionarios_fk,id_usuarios_fk) VALUE
-
+INSERT INTO Emprestimos (id,data_emprest,data_devolucao,id_livros_fk,id_funcionarios_fk,id_usuarios_fk) VALUES
+(41,'2021-04-13','2021-06-13',36,25,20),
+(42,'2022-05-18','2022-07-18',37,26,21),
+(43,'2023-07-20','2023-09-20',38,27,22),
+(44,'2012-08-12','2012-10-12',39,28,23),
+(45,'2000-09-13','2000-11-13',40,29,24);
 
