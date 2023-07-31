@@ -1,5 +1,9 @@
+-- Create usado para criar banco de dados biblioteca e tabelas
 CREATE DATABASE IF NOT EXISTS biblioteca;
+--  Use seleciona banco de dados biblioteca
 USE biblioteca;
+
+-- Comando para criar a tabela com informações dos livros
 CREATE TABLE IF NOT EXISTS Livros (
 	id INT AUTO_INCREMENT PRIMARY KEY,
 	titulo VARCHAR(100), 
@@ -13,6 +17,7 @@ CREATE TABLE IF NOT EXISTS Livros (
 	id_generos_fk INT ,
 	id_editoras_fk INT   
 );
+-- Comando para criar a tabela com informações das pessoas
   CREATE TABLE IF NOT EXISTS Pessoas (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(50),
@@ -22,22 +27,26 @@ CREATE TABLE IF NOT EXISTS Livros (
     nasc DATE,
     id_enderecos_fk INT
 );
+-- Comando para criar a tabela com informações dos usuarios
   CREATE Table IF NOT EXISTS Usuarios( 
   id INT AUTO_INCREMENT PRIMARY KEY,
   senha VARCHAR(12),
   id_pessoas_fk INT 
 );
+-- Comando para criar a tabela com informações dos funcionarios
  CREATE Table IF NOT EXISTS Funcionarios (
   id INT AUTO_INCREMENT PRIMARY KEY,
   senha VARCHAR(12),
   cargo ENUM('Atendente','Bibliotecario','Restaurador','Auxiliar de Limpeza','Bibliotecaria'),
   id_pessoas_fk INT 
 );
+-- Comando para criar a tabela com informações dos autores
   CREATE Table IF NOT EXISTS Autores (
   id INT AUTO_INCREMENT PRIMARY KEY,
   qtd_livros INT,
   id_pessoas_fk INT
 );
+-- Comando para criar a tabela com informações dos endereços
 CREATE Table IF NOT EXISTS Enderecos (
   id INT AUTO_INCREMENT PRIMARY KEY,
   rua VARCHAR(100),
@@ -45,6 +54,7 @@ CREATE Table IF NOT EXISTS Enderecos (
   cep INT,
   complemento VARCHAR(25)  
 );
+-- Comando para criar a tabela com informações das editoras
 CREATE Table IF NOT EXISTS Editoras (
   id INT AUTO_INCREMENT PRIMARY KEY ,
   nome VARCHAR(50),
@@ -52,11 +62,13 @@ CREATE Table IF NOT EXISTS Editoras (
   telefone VARCHAR(15),
   email varchar(50)
 );
+-- Comando para criar a tabela com informações dos generos
   CREATE Table IF NOT EXISTS Generos ( 
   id INT AUTO_INCREMENT PRIMARY KEY,
   categoria enum('Ação','Suspense','Comédia','Terror','Policial','Drama','Ficção')
 );
- CREATE Table IF NOT EXISTS Emprestimos (
+-- Comando para criar a tabela com informações dos emprestimos
+CREATE Table IF NOT EXISTS Emprestimos (
 id INT AUTO_INCREMENT PRIMARY KEY,
 data_emprest DATE,
 data_devolucao DATE,
@@ -74,7 +86,3 @@ ALTER TABLE Autores  ADD FOREIGN KEY (id_pessoas_fk) REFERENCES Pessoas (id);
 ALTER TABLE Emprestimos  ADD FOREIGN KEY (id_livros_fk) REFERENCES Livros (id);
 ALTER TABLE Emprestimos  ADD FOREIGN KEY (id_funcionarios_fk) REFERENCES Funcionarios (id);
 ALTER TABLE Emprestimos  ADD FOREIGN KEY (id_usuarios_fk) REFERENCES Usuarios (id);
-
-
-
-	   
